@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* All the elements have same box sizing */
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh; /*view height depending on the viewport */
+}
+
+/*////////////
+    HEADER 
+ ///////////*/
+.nav {
+  display: flex;
+  justify-content: flex-end; /* aligning them at the end */
+  align-items: center;
+  padding: 2rem;
+}
+
+.nav__ul {
+  display: flex;
+  list-style: none; /* remove the bullets */
+}
+
+.nav__link {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.nav__link-gmail {
+  text-decoration: none;
+}
+
+.nav__link-imagenes {
+  text-decoration: none;
+}
+
+.nav__link-imagenes:hover,
+.nav__link-imagenes:active {
+  /* active is used to make the link active only */
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.nav__link-gmail:hover,
+.nav__link-gmail:active {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.nav__dots {
+  opacity: 0.5;
+  height: 2.7rem;
+  margin-right: 1.8rem;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+
+.nav__dots:hover,
+.nav__dots:active {
+  opacity: 0.85;
+}
+
+.nav__user {
+  border-radius: 50%;
+  height: 3.2rem;
+  cursor: pointer;
+}
+
+/*////////////
+     MAIN
+ ///////////*/
+.google-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.google-main__input-field {
+  margin-top: 2.8rem;
+  width: 59rem;
+  height: 4.5rem;
+  border: 1px solid #dfe1e5;
+  border-radius: 2rem;
+  text-indent: 4rem;
+  font-size: 1.6rem;
+
+  background: url(img/google-search.png) 13px no-repeat,
+    url(img/google-mic.png) 55rem no-repeat;
+  background-size: 3%;
+}
+
+.google-main__input-field:hover,
+.google-main__input-field:active,
+.google-main__input-field:focus {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+  outline: none;
+}
+
+.google-main__input-btn-1 {
+  color: rgba(0, 0, 0, 0.67);
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #f2f2f2;
+  margin: 3rem 13.5rem;
+  background-color: #f2f2f2;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.google-main__input-btn-1:hover,
+.google-main__input-btn-1:active,
+.google-main__input-btn-1:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f6f6f6;
+  border: 1px solid #c6c6c6;
+  color: #222;
+  outline: none;
+}
+
+.google-main__input-btn-2 {
+  color: rgba(0, 0, 0, 0.67);
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #f2f2f2;
+  margin: 3rem -12rem;
+  background-color: #f2f2f2;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.google-main__input-btn-2:hover,
+.google-main__input-btn-2:active,
+.google-main__input-btn-2:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f6f6f6;
+  border: 1px solid #c6c6c6;
+  color: #222;
+  outline: none;
+}
+.google-main__text {
+  font-size: 1.4rem;
+}
+
+.google-main__link {
+  text-decoration: none;
+  color: #1a0dab;
+  padding: 6px;
+}
+
+.google-main__link:hover,
+.google-main__link:active {
+  text-decoration: underline;
+}
+
+/*////////////
+    FOOTER
+ ///////////*/
+
+.footer {
+  background: #f2f2f2;
+  color: rgba(0, 0, 0, 0.67);
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+}
+
+.primerfoot {
+  border: #000;
+  border-top: 1px solid #e4e4e4;
+  padding-left: 1.5rem;
+}
+
+.secfoot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  min-width: 90rem;
+}
+
+.secfoot__li {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.secfoot__li:hover,
+.secfoot__li:active {
+  text-decoration: underline;
+}

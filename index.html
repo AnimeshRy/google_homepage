@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./search.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <title>Google</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav__ul">
+            <li class="nav__li">
+              <a href="#" class="nav__link nav__link-gmail">Gmail</a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__link nav__link-imagenes">Images</a>
+            </li>
+            <li class="nav__li"></li>
+          </ul>
+
+          <img src="./img/nav-dots.png" alt="Dots" class="nav__dots" />
+          <img src="./img/nav-user.png" alt="User icon" class="nav__user" />
+        </nav>
+      </header>
+      <main>
+        <div class="google-main">
+          <img
+            src="./img/google-logo.png"
+            alt="Google Logo"
+            class="google-main__logo"
+          />
+          <form action="https://www.google.com/search" method="GET">
+            <input type="text" class="google-main__input-field" name="q" />
+            <div>
+              <input
+                class="google-main__input-btn-1"
+                value="Google Search"
+                type="submit"
+              />
+              <input
+                class="google-main__input-btn-2"
+                value="I'm Feeling Lucky"
+                name="btnI"
+                type="submit"
+              />
+            </div>
+          </form>
+          <p class="google-main__text">
+            Google offered in:
+            <a href="#" class="google-main__link">हिन्दी </a>
+            <a href="#" class="google-main__link">বাংলা </a>
+            <a href="#" class="google-main__link">తెలుగు </a>
+            <a href="#" class="google-main__link">मराठी </a>
+            <a href="#" class="google-main__link">தமிழ் </a>
+            <a href="#" class="google-main__link">ગુજરાતી </a>
+            <a href="#" class="google-main__link">ಕನ್ನಡ </a>
+            <a href="#" class="google-main__link">മലയാളം </a>
+            <a href="#" class="google-main__link">ਪੰਜਾਬੀ </a>
+          </p>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="primerfoot">
+          <p class="primerfoot__text secfoot__li">India</p>
+        </div>
+        <div class="secfoot">
+          <div class="secfoot-izq">
+            <ul class="secfoot-izq__ul nav__ul">
+              <li class="secfoot__li">Advertising</li>
+              <li class="secfoot__li">Business</li>
+              <li class="secfoot__li">About</li>
+              <li class="secfoot__li">How Search Works</li>
+            </ul>
+          </div>
+          <div class="secfoot-der">
+            <ul class="secfoot-der__ul nav__ul">
+              <li class="secfoot__li">Privacy</li>
+              <li class="secfoot__li">Terms</li>
+              <li class="secfoot__li">Settings</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
